@@ -2,7 +2,7 @@ import React from 'react'
 
 const MoviePage = () => {
   return (
-    <div>
+    <div className='bg-black text-white'>
       MoviePage
     </div>
   )

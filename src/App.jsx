@@ -13,7 +13,7 @@ import NotFoundPage from './pages/NoteFoundPage/NotFoundPage';
 //
 function App() {
   return (
-    <>
+    <div >
       <Routes>
         {/* AppLayout: navbar */}
         <Route path="/" element={<AppLayout />}>
@@ -28,7 +28,7 @@ function App() {
         {/* NotFoundPage */}
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
-    </>
+    </div>
   );
 }
 
