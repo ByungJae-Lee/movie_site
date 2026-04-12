@@ -1,6 +1,5 @@
 /* 좁은 배너 화면 크게 */
 .banner {
-    
   /* 이미지 크기 */
   height: 56vh;
   /* 이미지 좌측부터 시작 */
@@ -8,8 +7,6 @@
   /* 이미지 중복방지 */
   background-repeat: no-repeat;
   background-size: cover;
-
-  
 }
 /* 배너에 그라데이션 주기 */
 .banner:before {
@@ -33,15 +30,13 @@
 }
 /* banner-text-area의 모든아이템들 겉으로 꺼내기*/
 .banner-text-area > * {
-    z-index: 2;
+  z-index: 2;
 }
 
 /* 수정부분 */
 .banner-text-area h1 {
-    
- 
   font-size: 3rem;
-  
+
   /* 긴 제목이 박스를 터뜨리지 않게 한 줄로 제한하거나 줄바꿈 처리 */
   display: -webkit-box;
   -webkit-line-clamp: 2; /* 최대 2줄까지만 보여줌 */
