@@ -1,5 +1,6 @@
 /* 좁은 배너 화면 크게 */
 .banner {
+    
   /* 이미지 크기 */
   height: 56vh;
   /* 이미지 좌측부터 시작 */
@@ -7,6 +8,8 @@
   /* 이미지 중복방지 */
   background-repeat: no-repeat;
   background-size: cover;
+
+  
 }
 /* 배너에 그라데이션 주기 */
 .banner:before {
@@ -19,14 +22,39 @@
 }
 /* 글씨 상자 크기 조절 */
 .banner-text-area {
-  width: 36%;
+  /* width: 50%; */
+  max-width: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
   padding: 2rem;
+  box-sizing: border-box;
 }
 /* banner-text-area의 모든아이템들 겉으로 꺼내기*/
 .banner-text-area > * {
     z-index: 2;
+}
+
+/* 수정부분 */
+.banner-text-area h1 {
+    
+ 
+  font-size: 3rem;
+  
+  /* 긴 제목이 박스를 터뜨리지 않게 한 줄로 제한하거나 줄바꿈 처리 */
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 최대 2줄까지만 보여줌 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.banner-text-area p {
+  font-size: 1.2rem;
+  /* 모바일에서 설명이 너무 길면 배너를 뚫고 나갈 수 있으므로 
+     말줄임표 처리를 하거나 높이를 제한합니다. */
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* 최대 3줄까지만 보여줌 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
