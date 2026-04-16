@@ -10,7 +10,7 @@ import NotFoundPage from './pages/NoteFoundPage/NotFoundPage';
 // 홈페이지 /
 // 영화 전체 보여주는 페이지 (서치) /movies
 // 영화 디테일 페이지 /movies/:id
-//
+
 function App() {
   return (
     <div >

@@ -22,14 +22,11 @@ import MovieCard from '../../common/MovieCard/MovieCard';
 // 페이지 네이션 클릭때마다 page바꿔주기
 // page 값이 바뀔때마다 useSearchMovie에 page까지 넣어서 fetch
 
-
 const MoviePage = () => {
   const ReactPaginate = PaginatePkg.default || PaginatePkg;
   const [query, setQuery] = useSearchParams();
   const [page, setPage] = useState(1);
   const keyword = query.get('q');
-
-
 
   const { data, isLoading, isError, error } =
     useSearchMovieQuery({ keyword, page });
@@ -38,9 +35,6 @@ const MoviePage = () => {
     setPage(selected + 1);
   };
   console.log('ddd', data);
-
-
-
 
   if (isLoading) {
     return (
@@ -57,10 +51,9 @@ const MoviePage = () => {
     return <Alert variant="danger">{error.message}</Alert>;
   }
 
-
-
   return (
     <Container
+      fluid
       className="bg-black text-white"
       style={{ minHeight: '100vh' }}
     >
@@ -73,7 +66,6 @@ const MoviePage = () => {
             {data?.results.map((movie, index) => (
               <Col key={index} lg={4} xs={12}>
                 <MovieCard movie={movie} />
-                
               </Col>
             ))}
           </Row>

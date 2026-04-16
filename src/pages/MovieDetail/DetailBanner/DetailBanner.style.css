@@ -1,0 +1,9 @@
+.detail-banner{
+/* 이미지 크기 */
+  height: 56vh;
+  /* 이미지 좌측부터 시작 */
+  background-position: left;
+  /* 이미지 중복방지 */
+  background-repeat: no-repeat;
+  background-size: cover;
+}

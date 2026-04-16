@@ -1,11 +1,10 @@
-:root{
+:root {
   background-color: black;
   color-scheme: dark;
 }
 
-
-
 body {
   background-color: black;
   color: white;
+  margin: 0;
 }

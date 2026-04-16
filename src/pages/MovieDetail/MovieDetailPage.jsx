@@ -1,11 +1,16 @@
-import React from 'react'
+import React from 'react';
+import DetailBanner from './DetailBanner/DetailBanner';
+import MovieInfo from './MovieInfo/MovieInfo';
+import MovieReviews from './MovieReviews/MovieReviews';
 
 const MovieDetailPage = () => {
   return (
     <div>
-      MovieDetailPage
+      <DetailBanner />
+      <MovieInfo />
+      <MovieReviews />
     </div>
-  )
-}
+  );
+};
 
-export default MovieDetailPage
+export default MovieDetailPage;
